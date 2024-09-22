@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate For Humanity</title>
-    <link rel="stylesheet" href="./assets/css/output.css">
-</head>
-<body>
-    <h1 class="text-2xl font-black">hi there!!</h1>
-    
-    <script src="./assets/scripts/script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Donate For Humanity</title>
+        <link
+            rel="shortcut icon"
+            href="./assets/imgaes/logo.png"
+            type="image/x-icon"
+        />
+        <!-- Fonts start -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Fonts end -->
+
+        <link rel="stylesheet" href="./assets/css/output.css" />
+    </head>
+    <body class="font-laxend">
+        <!-- Header Start -->
+        <header class="bg-bg1 sm:pb-8 pb-4">
+            <!-- NavBar start -->
+            <nav
+                class="mx-auto flex justify-between items-center p-5 max-w-screen-2xl"
+            >
+                <!-- Blog Button -->
+                <button
+                    id="blog"
+                    class="hidden sm:block btn btn-lg bg-button1 border-0 text-text1 font-laxend font-semibold text-xl"
+                    type="button"
+                >
+                    Blog
+                </button>
+                <!-- Logo with Title -->
+                <div class="flex sm:gap-4 gap-1.5 items-center">
+                    <!-- Logo -->
+                    <img
+                        src="./assets/imgaes/logo.png"
+                        class="h-8 sm:h-12"
+                        alt="Logo of Donate Bangladesh"
+                    />
+                    <!-- Title -->
+                    <h1 class="text-text1 font-laxend font-semibold sm:text-xl">
+                        Donate Bangladesh
+                    </h1>
+                </div>
+                <!-- Coin Count -->
+                <div class="flex sm:gap-4 gap-1.5 items-center">
+                    <!-- Coin Image -->
+                    <img
+                        src="./assets/imgaes/coin.png"
+                        class="h-6 sm:h-8"
+                        alt="Picture of a Coin"
+                    />
+                    <!-- Digits -->
+                    <p
+                        id="total-coin"
+                        class="text-text1 font-laxend font-semibold sm:text-xl"
+                    >
+                        5500
+                    </p>
+                </div>
+            </nav>
+            <!-- NavBar end -->
+        </header>
+        <!-- Header end -->
+
+        <script src="./assets/scripts/script.js"></script>
+    </body>
 </html>
