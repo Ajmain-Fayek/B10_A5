@@ -1,6 +1,6 @@
 # Welcome to Assignment 5
 
-## <img width=30px src="assets/logo.png"/> DONATE BANGLADESH
+## DONATE BANGLADESH
 
 ## Key Rule
 
