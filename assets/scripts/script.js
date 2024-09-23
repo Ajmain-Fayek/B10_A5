@@ -172,7 +172,7 @@ function transaction_history(amount, h2_text) {
     );
     const h2 = document.createElement("h2");
     h2.classList.add("text-text1", "font-laxend", "font-bold", "sm:text-xl");
-    h2.innerText = amount + " " + h2_text;
+    h2.innerText = amount +" BDT Donated at " + " " + h2_text;
     const p = document.createElement("p");
     p.classList.add("text-text2", "font-light", "text-base");
     p.innerText = "Date: " + Date();
