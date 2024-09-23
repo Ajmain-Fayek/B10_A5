@@ -100,6 +100,7 @@
             <div id="donation-section" class="flex gap-8 flex-col">
                 <!-- Card 1 start -->
                 <div
+                    id="card-1"
                     class="grid grid-cols-1 lg:grid-cols-2 gap-6 rounded-xl items-center justify-center border border-strock p-4 sm:p-8"
                 >
                     <!-- Figure -->
@@ -146,7 +147,6 @@
                             />
                             <button
                                 id="donate"
-                                onclick="my_modal_1.showModal()"
                                 class="btn btn-lg bg-button1 w-full text-text1 font-laxend font-semibold sm:text-xl"
                             >
                                 Donate Now
@@ -157,6 +157,7 @@
                 <!-- Card 1 end -->
                 <!-- Card 2 start -->
                 <div
+                    id="card-2"
                     class="grid grid-cols-1 lg:grid-cols-2 gap-6 rounded-xl items-center justify-center border border-strock p-4 sm:p-8"
                 >
                     <!-- Figure -->
@@ -206,7 +207,6 @@
                             />
                             <button
                                 id="donate"
-                                onclick="my_modal_1.showModal()"
                                 class="btn btn-lg bg-button1 w-full text-text1 font-laxend font-semibold sm:text-xl"
                             >
                                 Donate Now
@@ -217,6 +217,7 @@
                 <!-- Card 2 end -->
                 <!-- Card 3 start -->
                 <div
+                    id="card-3"
                     class="grid grid-cols-1 lg:grid-cols-2 gap-6 rounded-xl items-center justify-center border border-strock p-4 sm:p-8"
                 >
                     <!-- Figure -->
@@ -306,20 +307,7 @@
             <!-- Modal Container end -->
 
             <!-- Container for History start -->
-            <div id="history-section" class="hidden gap-8 flex-col">
-                <div
-                    class="flex flex-col gap-4 p-4 sm:p-6 md:p-8 rounded-lg border border-strock"
-                >
-                    <h2 class="text-text1 font-laxend font-bold sm:text-xl">
-                        96500 Taka is Donated for famine-2024 at Feni,
-                        Bangladesh
-                    </h2>
-                    <p class="text-text2 font-light text-base">
-                        Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh
-                        Standard Time)
-                    </p>
-                </div>
-            </div>
+            <div id="history-section" class="hidden gap-8 flex-col-reverse"></div>
             <!-- Container for History end -->
         </main>
         <!-- Main end -->
