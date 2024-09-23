@@ -172,7 +172,7 @@ function transaction_history(amount, h2_text) {
     );
     const h2 = document.createElement("h2");
     h2.classList.add("text-text1", "font-laxend", "font-bold", "sm:text-xl");
-    h2.innerText = amount +" BDT Donated at " + " " + h2_text;
+    h2.innerText = amount + " BDT Donated at " + " " + h2_text;
     const p = document.createElement("p");
     p.classList.add("text-text2", "font-light", "text-base");
     p.innerText = "Date: " + Date();
@@ -191,6 +191,8 @@ function modal_congrates(description) {
     myModal.querySelectorAll("p")[0].innerText = description;
     myModal.querySelectorAll("p")[1].innerText = "Successful";
     myModal.getElementsByTagName("button")[0].innerText = "Close Confirmation";
+    myModal.getElementsByTagName("button")[0].classList.remove("btn-error");
+    myModal.getElementsByTagName("button")[0].classList.add("bg-button1");
     myModal.showModal();
 }
 
@@ -203,5 +205,7 @@ function modal_error(description) {
     myModal.querySelectorAll("p")[0].innerText = description;
     myModal.querySelectorAll("p")[1].innerText = "Transaction Failed";
     myModal.getElementsByTagName("button")[0].innerText = "Close";
+    myModal.getElementsByTagName("button")[0].classList.add("btn-error");
+    myModal.getElementsByTagName("button")[0].classList.remove("bg-button1");
     myModal.showModal();
 }
