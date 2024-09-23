@@ -1603,8 +1603,7 @@ html {
 }
 
 .bg-bg1 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 247 243 / var(--tw-bg-opacity));
+  background-color: rgba(255, 245, 240, 0.7);
 }
 
 .bg-button1 {
