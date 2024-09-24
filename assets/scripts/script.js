@@ -55,7 +55,7 @@ donation_amount[0].querySelector("button").addEventListener("click", () => {
         parseFloat(document.getElementById("total-coin").innerText) <
         donation_amount[0].querySelector("input").value
     ) {
-        modal_error("Amount can not be greater then main balance!");
+        modal_error("Insufficient Balance!");
     } else {
         const amount = parseFloat(
             donation_amount[0].querySelector("input").value
@@ -72,12 +72,11 @@ donation_amount[0].querySelector("button").addEventListener("click", () => {
 
         document.getElementById("amount-noakhali").innerText =
             new_noakhali_amount;
-
         document.getElementById("total-coin").innerText = my_new_total_coin;
+
         donation_amount[0].querySelector("input").value = "";
 
         modal_congrates(card1.querySelector("h2").innerText);
-
         transaction_history(amount, card1.querySelector("h2").innerText);
     }
 });
@@ -94,7 +93,7 @@ donation_amount[1].querySelector("button").addEventListener("click", () => {
         parseFloat(document.getElementById("total-coin").innerText) <
         donation_amount[1].querySelector("input").value
     ) {
-        modal_error("Amount can not be greater then main balance!");
+        modal_error("Insufficient Balance!");
     } else {
         const amount = parseFloat(
             donation_amount[1].querySelector("input").value
@@ -110,8 +109,8 @@ donation_amount[1].querySelector("button").addEventListener("click", () => {
         const my_new_total_coin = total_coin - amount;
 
         document.getElementById("amount-feni").innerText = new_feni_amount;
-
         document.getElementById("total-coin").innerText = my_new_total_coin;
+
         donation_amount[1].querySelector("input").value = "";
 
         modal_congrates(card2.querySelector("h2").innerText);
@@ -131,7 +130,7 @@ donation_amount[2].querySelector("button").addEventListener("click", () => {
         parseFloat(document.getElementById("total-coin").innerText) <
         donation_amount[2].querySelector("input").value
     ) {
-        modal_error("Amount can not be greater then main balance!");
+        modal_error("Insufficient Balance!");
     } else {
         const amount = parseFloat(
             donation_amount[2].querySelector("input").value
@@ -147,8 +146,8 @@ donation_amount[2].querySelector("button").addEventListener("click", () => {
         const my_new_total_coin = total_coin - amount;
 
         document.getElementById("amount-quota").innerText = new_quota_amount;
-
         document.getElementById("total-coin").innerText = my_new_total_coin;
+
         donation_amount[2].querySelector("input").value = "";
 
         modal_congrates(card3.querySelector("h2").innerText);

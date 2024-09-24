@@ -1396,6 +1396,14 @@ html {
   }
 }
 
+.btn-md {
+  height: 3rem;
+  min-height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+}
+
 .btn-lg {
   height: 4rem;
   min-height: 4rem;
@@ -1404,9 +1412,22 @@ html {
   font-size: 1.125rem;
 }
 
+.btn-square:where(.btn-md) {
+  height: 3rem;
+  width: 3rem;
+  padding: 0px;
+}
+
 .btn-square:where(.btn-lg) {
   height: 4rem;
   width: 4rem;
+  padding: 0px;
+}
+
+.btn-circle:where(.btn-md) {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
   padding: 0px;
 }
 
@@ -1732,9 +1753,9 @@ html {
   line-height: 1.5rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -1764,6 +1785,29 @@ html {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+@media (min-width: 580px) {
+  .sm\:btn-lg {
+    height: 4rem;
+    min-height: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.125rem;
+  }
+
+  .btn-square:where(.sm\:btn-lg) {
+    height: 4rem;
+    width: 4rem;
+    padding: 0px;
+  }
+
+  .btn-circle:where(.sm\:btn-lg) {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9999px;
+    padding: 0px;
+  }
+}
+
 .placeholder\:text-xs::-moz-placeholder {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1791,10 +1835,6 @@ html {
 }
 
 @media (min-width: 580px) {
-  .sm\:block {
-    display: block;
-  }
-
   .sm\:h-12 {
     height: 3rem;
   }
@@ -1809,6 +1849,10 @@ html {
 
   .sm\:w-10 {
     width: 2.5rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
   }
 
   .sm\:gap-12 {
