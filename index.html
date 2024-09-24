@@ -40,7 +40,9 @@
                             Blog
                         </button>
                         <!-- Logo with Title -->
-                        <div class="flex flex-col sm:flex-row sm:gap-4 gap-1.5 items-center">
+                        <div
+                            class="flex flex-col sm:flex-row sm:gap-4 gap-1.5 items-center"
+                        >
                             <!-- Logo -->
                             <img
                                 src="./assets/imgaes/logo.png"
@@ -97,7 +99,7 @@
         <!-- Main start -->
         <main class="py-12 px-6 sm:px-14 mx-auto max-w-screen-2xl">
             <!-- Container for Donation start -->
-            <div id="donation-section" class="flex gap-8 flex-col">
+            <div id="donation-section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 items-start">
                 <!-- Card 1 start -->
                 <div
                     id="card-1"
@@ -316,7 +318,16 @@
         <!-- Main end -->
 
         <!-- Footer start -->
-        <footer class="py-12 bg-bg1"></footer>
+        <footer class="py-3 bg-bg1">
+            <small class="flex flex-col gap-1.5 items-center justify-center"
+                >All &copy;Copywrights reserved to<img
+                    src="./assets/imgaes/logo.png"
+                    class="w-6"
+                    alt=""
+                />
+                Donate Bangladesh</small
+            >
+        </footer>
         <!-- Footer end -->
         <script src="./assets/scripts/script.js"></script>
     </body>

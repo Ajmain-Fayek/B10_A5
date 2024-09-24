@@ -22,12 +22,12 @@
     </head>
     <body class="font-laxend">
         <!-- Header Start -->
-        <header class="sm:pb-8 pb-4 sticky top-0">
+        <header class="sm:pb-8 pb-4 sticky top-0 z-50">
             <!-- NavBar start -->
-            <nav
-                class="mx-auto pb-6 justify-between items-center w-full backdrop-blur-lg"
-            >
-                <div class="bg-bg1 pt-6 pb-8 md:pb-16 px-4 w-full">
+            <nav class="mx-auto pb-4 justify-between items-center w-full">
+                <div
+                    class="bg-bg1 pt-6 pb-8 md:pb-16 px-4 w-full backdrop-blur-sm"
+                >
                     <div
                         class="flex justify-between items-center mx-auto max-w-screen-2xl"
                     >
@@ -80,15 +80,153 @@
         <!-- Header end -->
 
         <!-- Main start -->
-        <main class="py-12 px-6 sm:px-14 mx-auto max-w-screen-2xl">
+        <main class="pb-40 px-6 sm:px-14 mx-auto max-w-screen-2xl z-0">
             <!-- Container for Donation start -->
-            <div class=""></div>
+            <div class="flex flex-col gap-4">
+                <div class="text-lg md:text-xl font-semibold">FAQ's</div>
+                <div
+                    class="collapse collapse-arrow border border-strock shadow-sm"
+                >
+                    <input
+                        type="radio"
+                        name="my-accordion-2"
+                        checked="checked"
+                    />
+                    <div
+                        class="collapse-title text-text1 font-laxend font-medium text-lg sm:text-xl"
+                    >
+                        What is the Document Object Model (DOM)?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-text2 text-base md:text-lg">
+                            The Document Object Model (DOM) is a programming
+                            interface for representing HTML, XML, and other
+                            structured documents as a tree structure. 1 It
+                            provides a way for JavaScript programs to interact
+                            with the content, structure, and style of a
+                            document.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="collapse collapse-arrow border border-strock shadow-sm"
+                >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                        class="collapse-title text-text1 font-laxend font-medium text-lg sm:text-xl"
+                    >
+                        How do you select an element from the DOM?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-text2 text-base md:text-lg">
+                            There are several ways to select an element from the
+                            DOM in JavaScript:
+                        </p>
+
+                        <ul
+                            style="list-style: disc"
+                            class="pl-4 text-text2 text-base md:text-lg"
+                        >
+                            <li>Using <code>.getElementById()</code></li>
+                            <li>
+                                Using <code>.getElementsByClassName()</code>
+                            </li>
+                            <li>Using <code>.getElementsByTagName()</code></li>
+                            <li>Using <code>.querySelector()</code></li>
+                            <li>Using <code>.querySelectorAll()</code></li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="collapse collapse-arrow border border-strock shadow-sm"
+                >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                        class="collapse-title text-text1 font-laxend font-medium text-lg sm:text-xl"
+                    >
+                        What is event delegation in the context of the DOM, and
+                        why is it useful?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-text2 text-base md:text-lg">
+                            <b>Event Delegation</b> in the DOM refers to the
+                            practice of attaching an event listener to a parent
+                            element rather than to each individual child
+                            element. This allows you to handle events for
+                            multiple child elements efficiently without having
+                            to add separate event listeners to each one.
+                            <br /><br />
+                            <b>Why is it useful?</b><br />
+                            <b>Improved Performance:</b> When dealing with a
+                            large number of child elements, adding event
+                            listeners to each one can significantly impact
+                            performance. Event delegation reduces the overhead
+                            by handling events at a higher level in the DOM
+                            tree. <br />
+                            <br />
+                            <b>Dynamic Content:</b>
+                            If the number of child elements changes dynamically
+                            (e.g., through JavaScript or user interaction),
+                            event delegation ensures that new elements are
+                            automatically included without requiring additional
+                            code to attach event listeners. <br /><br />
+                            <b>Simplified Code:</b>
+                            Event delegation can lead to cleaner and more
+                            concise code, as you only need to manage a single
+                            event listener instead of multiple ones.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="collapse collapse-arrow border border-strock shadow-sm"
+                >
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-lg md:text-xl font-medium">
+                        How do you manipulate an element's attributes and styles
+                        using the DOM?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-text2 text-base md:text-lg">
+                            <b>Manipulating Attributes</b> <br />
+                            To change an element's attributes using JavaScript
+                            and the DOM, you can use the following methods:
+                            <br />
+                            <b>1. getAttribute():</b> Retrieves the value of a
+                            specified attribute. <br />
+                            <b>2. setAttribute():</b> Sets the value of a
+                            specified attribute. <br />
+                            <b>3. removeAttribute():</b> Removes a specified
+                            attribute.
+                        </p>
+                        <br />
+                        <p class="text-text2 text-base md:text-lg">
+                            <b>Manipulating Styles</b> <br />
+                            To modify an element's styles using JavaScript and
+                            the DOM, you can use the following methods: <br />
+                            <b>1. style.property:</b> Directly sets the value of
+                            a specific CSS property. <br />
+                            <b>2. classList:</b>
+                            Manages the element's class list, which can be used
+                            to apply or remove CSS classes.
+                        </p>
+                    </div>
+                </div>
+            </div>
             <!-- Container for History end -->
         </main>
         <!-- Main end -->
 
         <!-- Footer start -->
-        <footer class="py-12 bg-bg1"></footer>
+        <footer class="py-3 bg-bg1 fixed bottom-0 z-50 w-full backdrop-blur-sm">
+            <small class="flex flex-col gap-1.5 items-center justify-center"
+                >All &copy;Copywrights reserved to<img
+                    src="../imgaes/logo.png"
+                    class="w-6"
+                    alt=""
+                />
+                Donate Bangladesh</small
+            >
+        </footer>
         <!-- Footer end -->
         <script src="../scripts/blog_scripts.js"></script>
     </body>
